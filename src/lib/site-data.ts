@@ -1,13 +1,13 @@
-import logoAsset from "@/assets/brand/makeover-by-d-logo.jpg.asset.json";
-import divyaAsset from "@/assets/brand/divya.jpg.asset.json";
-import heroAsset from "@/assets/brand/hero-bride.jpg.asset.json";
-import p1 from "@/assets/portfolio/p1.jpg.asset.json";
-import p2 from "@/assets/portfolio/p2.jpg.asset.json";
-import p3 from "@/assets/portfolio/p3.jpg.asset.json";
-import p4 from "@/assets/portfolio/p4.jpg.asset.json";
-import p5 from "@/assets/portfolio/p5.jpg.asset.json";
-import p6 from "@/assets/portfolio/p6.jpg.asset.json";
-import p7 from "@/assets/portfolio/p7.jpg.asset.json";
+import logoUrl from "@/assets/brand/makeover-by-d-logo.jpg";
+import divyaUrl from "@/assets/brand/divya.jpg";
+import heroUrl from "@/assets/brand/hero-bride.jpg";
+import p1Url from "@/assets/portfolio/p1.jpg";
+import p2Url from "@/assets/portfolio/p2.jpg";
+import p3Url from "@/assets/portfolio/p3.jpg";
+import p4Url from "@/assets/portfolio/p4.jpg";
+import p5Url from "@/assets/portfolio/p5.jpg";
+import p6Url from "@/assets/portfolio/p6.jpg";
+import p7Url from "@/assets/portfolio/p7.jpg";
 
 export const brand = {
   name: "Makeover by D",
@@ -21,9 +21,9 @@ export const brand = {
   email: "bookings@makeoverbyd.com",
   locations: ["Vellore", "Hosur", "Available worldwide"],
   tagline: "Lakmé certified bridal artistry",
-  logo: logoAsset.url,
-  portrait: divyaAsset.url,
-  hero: heroAsset.url,
+  logo: logoUrl,
+  portrait: divyaUrl,
+  hero: heroUrl,
 };
 
 export const navLinks = [
@@ -37,13 +37,13 @@ export const navLinks = [
 ] as const;
 
 export const portfolio = [
-  { src: p1.url, title: "Muhurtham — South Indian Bride", category: "Bridal", credit: "Kanjivaram & temple jewellery" },
-  { src: p2.url, title: "Soft Glam Reception", category: "Reception", credit: "Photography: The Shutter" },
-  { src: p3.url, title: "Editorial Glow", category: "Editorial", credit: "Photography: The Shutter" },
-  { src: p4.url, title: "Candlelit Engagement", category: "Engagement", credit: "Photography: The Shutter" },
-  { src: p5.url, title: "Kerala Onam Editorial", category: "Editorial", credit: "Camera: @swetha" },
-  { src: p6.url, title: "Half-Saree Ceremony", category: "Bridal", credit: "Captured: Dineshjothi Studios" },
-  { src: p7.url, title: "Sangeet Close-up", category: "Sangeet", credit: "Captured: Dineshjothi Studios" },
+  { src: p1Url, title: "Muhurtham — South Indian Bride", category: "Bridal", credit: "Kanjivaram & temple jewellery" },
+  { src: p2Url, title: "Soft Glam Reception", category: "Reception", credit: "Photography: The Shutter" },
+  { src: p3Url, title: "Editorial Glow", category: "Editorial", credit: "Photography: The Shutter" },
+  { src: p4Url, title: "Candlelit Engagement", category: "Engagement", credit: "Photography: The Shutter" },
+  { src: p5Url, title: "Kerala Onam Editorial", category: "Editorial", credit: "Camera: @swetha" },
+  { src: p6Url, title: "Half-Saree Ceremony", category: "Bridal", credit: "Captured: Dineshjothi Studios" },
+  { src: p7Url, title: "Sangeet Close-up", category: "Sangeet", credit: "Captured: Dineshjothi Studios" },
 ];
 
 export const services = [
