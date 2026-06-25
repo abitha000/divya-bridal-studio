@@ -42,7 +42,7 @@ export const portfolio = [
   { src: p3Url, title: "Editorial Glow", category: "Editorial", credit: "Photography: The Shutter" },
   { src: p4Url, title: "Candlelit Engagement", category: "Engagement", credit: "Photography: The Shutter" },
   { src: p5Url, title: "Kerala Onam Editorial", category: "Editorial", credit: "Camera: @swetha" },
-  { src: p6Url, title: "Half-Saree Ceremony", category: "Bridal", credit: "Captured: Dineshjothi Studios" },
+  { src: p6Url, title: "editorial shoot", category: "Bridal", credit: "Captured: Dineshjothi Studios" },
   { src: p7Url, title: "Sangeet Close-up", category: "Sangeet", credit: "Captured: Dineshjothi Studios" },
 ];
 
