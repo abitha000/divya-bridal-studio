@@ -11,6 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Nav } from "@/components/site/Nav";
+import { Footer } from "@/components/site/Footer";
 
 function NotFoundComponent() {
   return (
@@ -77,14 +79,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Makeover by D — Lakmé Certified Bridal Artistry by Divya Yadhav" },
+      {
+        name: "description",
+        content:
+          "Premium bridal makeup by Divya Yadhav. Muhurtham, reception, engagement & editorial artistry across Vellore, Hosur and worldwide.",
+      },
+      { name: "author", content: "Divya Yadhav" },
+      { property: "og:site_name", content: "Makeover by D" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "theme-color", content: "#5C0E1E" },
     ],
     links: [
       {
@@ -118,8 +123,11 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <Nav />
+      <main className="min-h-screen">
+        <Outlet />
+      </main>
+      <Footer />
     </QueryClientProvider>
   );
 }
