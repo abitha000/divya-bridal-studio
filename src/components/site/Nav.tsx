@@ -28,6 +28,11 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 md:px-10 md:py-5">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+          <img
+            src={brand.logo}
+            alt="Makeover by D"
+            className="h-10 w-10 rounded-full object-cover ring-1 ring-rose-gold/40 md:h-12 md:w-12"
+          />
           <span className="font-serif text-2xl tracking-tight text-maroon-deep md:text-3xl">
             Makeover <span className="italic text-rose-gold">by D</span>
           </span>

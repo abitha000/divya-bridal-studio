@@ -1,5 +1,6 @@
-import logoAsset from "@/assets/brand/logo.jpg.asset.json";
+import logoAsset from "@/assets/brand/makeover-by-d-logo.jpg.asset.json";
 import divyaAsset from "@/assets/brand/divya.jpg.asset.json";
+import heroAsset from "@/assets/brand/hero-bride.jpg.asset.json";
 import p1 from "@/assets/portfolio/p1.jpg.asset.json";
 import p2 from "@/assets/portfolio/p2.jpg.asset.json";
 import p3 from "@/assets/portfolio/p3.jpg.asset.json";
@@ -22,6 +23,7 @@ export const brand = {
   tagline: "Lakmé certified bridal artistry",
   logo: logoAsset.url,
   portrait: divyaAsset.url,
+  hero: heroAsset.url,
 };
 
 export const navLinks = [

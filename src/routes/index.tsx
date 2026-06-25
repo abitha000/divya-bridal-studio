@@ -52,9 +52,9 @@ function HomePage() {
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2.2, ease: [0.16, 1, 0.3, 1] }}
-          src={portfolio[0].src}
-          alt="South Indian muhurtham bride by Makeover by D"
-          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
+          src={brand.hero}
+          alt="South Indian muhurtham bride in golden kanjivaram silk by Makeover by D"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_20%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-maroon-deep/40 via-transparent to-maroon-deep/80" />
 
