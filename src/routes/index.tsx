@@ -47,18 +47,39 @@ function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden bg-maroon-deep">
-        <motion.img
-          initial={{ scale: 1.15, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 2.2, ease: [0.16, 1, 0.3, 1] }}
-          src={brand.hero}
-          alt="South Indian muhurtham bride in golden kanjivaram silk by Makeover by D"
-          className="absolute inset-0 h-full w-full object-cover object-[50%_20%]"
+      <section className="relative min-h-[100svh] w-full overflow-hidden bg-maroon-deep">
+        {/* Textured maroon background */}
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at 20% 0%, #7a1a2e 0%, #4a0a18 55%, #2d050d 100%)",
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-maroon-deep/40 via-transparent to-maroon-deep/80" />
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-[0.18] mix-blend-overlay"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(232,200,160,0.6) 1px, transparent 0)",
+            backgroundSize: "3px 3px",
+          }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-[0.08]"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(115deg, rgba(232,200,160,0.4) 0 1px, transparent 1px 9px)",
+          }}
+        />
+        {/* Decorative rose-gold rule */}
+        <div aria-hidden className="absolute left-0 right-0 top-24 mx-auto hidden h-px max-w-[1320px] bg-rose-gold/25 md:block" />
 
-        <div className="relative z-10 mx-auto flex h-full max-w-[1400px] flex-col justify-end px-5 pb-20 md:px-10 md:pb-28">
+        <div className="relative z-10 mx-auto grid h-full min-h-[100svh] max-w-[1400px] grid-cols-1 items-center gap-10 px-5 pt-32 pb-20 md:grid-cols-12 md:gap-12 md:px-10 md:pt-36 md:pb-28">
+          {/* TEXT */}
+          <div className="md:col-span-7">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,7 +92,7 @@ function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-ivory md:text-7xl lg:text-8xl"
+            className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-ivory md:text-6xl lg:text-7xl"
           >
             The bride you remember<br />
             <span className="italic text-rose-gold">becoming.</span>
@@ -106,6 +127,29 @@ function HomePage() {
             >
               View Portfolio
             </Link>
+          </motion.div>
+          </div>
+
+          {/* SIDE PORTRAIT */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
+            className="relative md:col-span-5"
+          >
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden">
+              <img
+                src={brand.hero}
+                alt="South Indian muhurtham bride in golden kanjivaram silk by Makeover by D"
+                className="h-full w-full object-cover"
+              />
+              {/* subtle maroon veil so the image marries the background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-maroon-deep/30 via-transparent to-maroon-deep/40 mix-blend-multiply" />
+              <div className="absolute inset-0 ring-1 ring-rose-gold/40" />
+            </div>
+            {/* corner ornament */}
+            <div aria-hidden className="absolute -left-3 -top-3 hidden h-12 w-12 border-l border-t border-rose-gold/60 md:block" />
+            <div aria-hidden className="absolute -right-3 -bottom-3 hidden h-12 w-12 border-b border-r border-rose-gold/60 md:block" />
           </motion.div>
         </div>
       </section>
