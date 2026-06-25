@@ -1,11 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "makeover-by-d",
-  "main": ".output/server/index.mjs",
+  "main": "dist/server/server.js",
   "compatibility_date": "2025-06-01",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": ".output/public",
+    "directory": "dist/client",
     "binding": "ASSETS",
     "not_found_handling": "single-page-application"
   },
