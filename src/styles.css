@@ -1,6 +1,14 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource/karla/300.css";
+@import "@fontsource/karla/400.css";
+@import "@fontsource/karla/500.css";
+@import "@fontsource/karla/600.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -19,6 +27,14 @@
  */
 
 @theme inline {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
+  --color-maroon: var(--maroon);
+  --color-maroon-deep: var(--maroon-deep);
+  --color-rose-gold: var(--rose-gold);
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
